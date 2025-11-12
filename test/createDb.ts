@@ -6,7 +6,7 @@ export function createTestDb() {
   // Note: for true multi-process, use a temp file path instead.
   const db = new Database('file:agent-foundry?mode=memory&cache=shared');
   db.pragma('foreign_keys = ON');
-  const schema = fs.readFileSync('./db/0001_init_agent_orchestrator.sql', 'utf8');
+  const schema = fs.readFileSync('../setup-script.sql', 'utf8');
   db.exec(schema);
   return db;
 }
