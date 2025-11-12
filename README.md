@@ -233,3 +233,4 @@ flowchart TD
 - Use with any language via SQLite (Node, Python, Go, etc.).
 - Works offline and embeds cleanly in agentic frameworks.
 - Combine with a lightweight orchestrator script to enqueue, lease, and monitor progress.
+- Define each flow as a tool for your agents to use.
